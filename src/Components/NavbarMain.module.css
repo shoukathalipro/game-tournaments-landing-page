@@ -1,0 +1,66 @@
+.NavbarMain {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.NavItem_In {
+    transform: skewX(-20deg);
+    display: flex;
+    padding: 1vh 2vw;
+    text-decoration: none;
+    color: white;
+
+}
+
+.NavItem_Text {
+    transform: skewX(20deg);
+}
+
+.Cart_Icon {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Search_Icon {
+    display: flex;
+    color: white;
+    background-color: #7600FF;
+    border: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1vh;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+/*////////////////*/
+/* Media Queries */
+
+@media (min-width: 280px) and (max-width: 767px) {
+    .NavItem_In {
+        display: none;
+    }
+
+    .Search_Icon {
+        background-color: transparent;
+        padding: 0 0;
+        border-radius: 0;
+    }
+
+    .NavbarMain {
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+    }
+}
+

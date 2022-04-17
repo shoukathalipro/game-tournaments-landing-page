@@ -1,0 +1,84 @@
+.HeaderTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5vh;
+    background-color: #170A27;
+    color: white;
+}
+
+.HeaderTop_Left {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+    padding-left: 5vw;
+}
+
+.HeaderTop_45 {
+    background-color: #7600FF;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.HeaderTop_Right {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+    padding-right: 5vw;
+}
+
+.HeaderTop_Slash {
+    height: 50%;
+    width: 2px;
+    background-color: white;
+    transform: skewX(-5deg);
+}
+
+.HeaderTop_Right_Text {
+    display: flex;
+}
+
+
+
+/*////////////////*/
+/* Media Queries */
+
+@media (min-width: 280px) and (max-width: 767px) {
+    .HeaderTop_Right_Text {
+        display: none;
+    }
+
+    .HeaderTop_Right {
+        padding-right: 5vw;
+        width: 50%;
+        justify-content: flex-end;
+        gap: 3vw;
+    }
+
+    .HeaderTop_Slash {
+        display: none;
+    }
+
+    .HeaderTop_Left {
+        width: 50%;
+    }
+
+    .HeaderTop_Left_Text {
+        font-size: 10px;
+    }
+
+    .HeaderTop_45 {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 10px;
+    box-sizing: border-box;
+    width: 30%;
+    }
+}

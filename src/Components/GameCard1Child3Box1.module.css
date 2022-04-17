@@ -1,0 +1,16 @@
+.Child3_Box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Child3_Box1_Top {
+    font-size: 30px;
+    font-weight: 500;
+    color: #FFA700;
+}
+
+.Child3_Box1_Bottom {
+    font-size: 15px;
+}

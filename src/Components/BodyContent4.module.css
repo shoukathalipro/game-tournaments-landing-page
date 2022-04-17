@@ -1,0 +1,76 @@
+.MainBody {
+    background: linear-gradient(45deg, black, #1F0043);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+
+.MainBody_Top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1vh;
+}
+
+.MainBody_Text1 {
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+}
+.MainBody_Text2 {
+    font-size: 40px;
+    color: #7600FF;
+    font-weight: 500;
+}
+
+.MainBody_Bottom {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    /* width: 100vw; */
+    align-items: center;
+    height: 80%;
+}
+
+.Bottom_Inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    width: 100%;
+}
+
+/* ::-webkit-scrollbar {    display: none;} */
+
+
+
+
+/*////////////////*/
+/* Media Queries */
+
+@media (min-width: 280px) and (max-width: 767px) {
+    .Bottom_Inner {
+        width: 300vw;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .MainBody_Bottom {
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        width: 100vw;
+    }
+
+    .MainBody_Bottom::-webkit-scrollbar {    display: none;}
+
+    .MainBody {
+        background: linear-gradient(0deg, black, #1F0043);
+    }
+}

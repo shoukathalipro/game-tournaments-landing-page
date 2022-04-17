@@ -1,0 +1,176 @@
+.MainBody {
+    background-color: #1E112A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+
+.MainBody_Left {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.MainBody_Right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    background-image: url("../Assets4/GamePlayer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    width: 50vh;
+}
+
+.MainBody_Image {
+    height: 70%;
+}
+
+.MainBody_Image2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 5vh;
+}
+
+.MainBody_Circle {
+    background-color: #B16BFD;
+    border-radius: 50%;
+    position: absolute;
+    left: 49%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.MainBody_Circle1 {
+    height: 16vh;
+    width: 16vh;
+    opacity: 0.3;
+}
+
+.MainBody_Circle2 {
+    height: 14vh;
+    width: 14vh;
+    opacity: 0.4;
+}
+
+.MainBody_Circle3 {
+    height: 12vh;
+    width: 12vh;
+    opacity: 0.5;
+}
+
+.MainBody_Titles {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    font-size: 25px;
+}
+
+.TitleBox1 {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+/* .TitleBox2 {
+
+} */
+
+
+.MainBody_Title1 {
+    margin: 0;
+    color: white;
+
+}
+
+.MainBody_Title2 {
+    margin: 0;
+    color: #7600FF;
+}
+
+.MainBody_Title3 {
+    margin: 0;
+    color: white;
+}
+
+/* .MainBody_Content_Box {
+
+} */
+
+.MainBody_Content {
+    font-size: 20px;
+    color: white;
+}
+
+.MainBody_Btn_Container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25vw;
+}
+
+.MainBody_Btn {
+    border: none;
+    transform: skewX(-20deg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 2vw;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #7600FF;
+    color: white;
+    cursor: pointer;
+}
+
+.MainBody_Btn_In {
+    transform: skewX(20deg);
+
+}
+
+.MainBody_EmptyDiv {
+    height: 100%;
+    width: 0.4vw;
+    background-color: white;
+    transform: skewX(-20deg);
+}
+
+
+
+/*////////////////*/
+/* Media Queries */
+
+@media (min-width: 280px) and (max-width: 767px) {
+    .MainBody {
+        flex-direction: column;
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+        margin-bottom: -1px;
+    }
+
+    .MainBody_Left {
+        width: 80vw;
+    }
+
+    .MainBody_Titles {
+        font-size: 20px;
+    }
+
+    .MainBody_Content {
+        font-size: 18px;
+    }
+
+    .MainBody_Right {
+        height: 50vh;
+        width: 80vw;
+    }
+}

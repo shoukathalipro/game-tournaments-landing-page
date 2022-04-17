@@ -1,0 +1,78 @@
+.GameCard1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px 1px 10px #521696, -1px -1px 10px #521696;
+}
+
+.GameCard_Child1{
+    display: flex;
+    flex-direction: row;
+    background-color: #170A27;
+    padding: 2vw;
+}
+
+.GameCard_Child1_Image {
+    height: 12vh;
+}
+
+.GameCard_Child2{
+    background-color: #211333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.GameCard_Child2_Top {
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.GameCard_Child2_Middle {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+}
+
+.GameCard_Child2_Image {
+    height: 1.5vh;
+}
+
+.GameCard_Child2_Btn1 {
+    background-color: #FFA700;
+    border: none;
+    padding: 1vh 1vw;
+    color: white;
+    cursor: pointer;
+}
+
+.GameCard_Child2_Btn2 {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 1vh 1vw;
+    color: white;
+    cursor: pointer;
+}
+
+.GameCard_Child2_Bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.GameCard_Child3{
+    display: flex;
+    flex-direction: row;
+    background-color: #170A27;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
